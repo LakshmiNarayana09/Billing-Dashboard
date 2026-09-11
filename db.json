@@ -1,0 +1,89 @@
+{
+  "billing": {
+    "currentPlan": "Pro",
+    "monthlyUsage": 750,
+    "usageLimit": 1000,
+    "totalAmount": 29,
+    "nextBillingDate": "2026-10-01"
+  },
+
+  "plans": [
+    {
+      "id": "free",
+      "name": "Free",
+      "price": 0,
+      "description": "For individuals getting started",
+      "features": [
+        "100 usage units",
+        "Basic support",
+        "1 user"
+      ]
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "price": 29,
+      "description": "For growing businesses",
+      "features": [
+        "1,000 usage units",
+        "Priority support",
+        "10 users",
+        "Advanced analytics"
+      ],
+      "popular": true
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "price": 99,
+      "description": "For large organizations",
+      "features": [
+        "Unlimited usage",
+        "24/7 support",
+        "Unlimited users",
+        "Advanced security"
+      ]
+    }
+  ],
+
+  "paymentMethods": [
+    {
+      "id": "pm1",
+      "cardType": "Visa",
+      "last4": "4242",
+      "expiry": "12/28",
+      "isDefault": true
+    },
+    {
+      "id": "pm2",
+      "cardType": "Mastercard",
+      "last4": "5555",
+      "expiry": "08/29",
+      "isDefault": false
+    }
+  ],
+
+  "invoices": [
+    {
+      "id": "inv1",
+      "invoiceNumber": "INV-1001",
+      "date": "2026-09-01",
+      "amount": 29,
+      "status": "Paid"
+    },
+    {
+      "id": "inv2",
+      "invoiceNumber": "INV-1002",
+      "date": "2026-08-01",
+      "amount": 29,
+      "status": "Paid"
+    },
+    {
+      "id": "inv3",
+      "invoiceNumber": "INV-1003",
+      "date": "2026-10-01",
+      "amount": 29,
+      "status": "Pending"
+    }
+  ]
+}
