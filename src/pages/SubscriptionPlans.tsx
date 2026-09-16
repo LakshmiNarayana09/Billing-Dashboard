@@ -46,32 +46,8 @@ function SubscriptionPlans() {
     fetchPlans();
   }, []);
 
-  const handleChangePlan = (
-    plan: SubscriptionPlan
-  ) => {
-    const confirmed =
-      window.confirm(
-        `Are you sure you want to ${
-          plan.price >
-          (currentPlan === "Free"
-            ? 0
-            : currentPlan === "Pro"
-              ? 29
-              : 99)
-            ? "upgrade"
-            : "downgrade"
-        } to the ${plan.name} plan?`
-      );
-
-    if (!confirmed) {
-      return;
-    }
-
+  const handleChangePlan = (plan: SubscriptionPlan) => {
     setCurrentPlan(plan.name);
-
-    window.alert(
-      `Your plan has been changed to ${plan.name}.`
-    );
   };
 
   if (loading) {
